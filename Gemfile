@@ -41,3 +41,5 @@ group :development, :test do
   gem 'spring'
 end
 
+# Use MongoDB
+gem 'mongoid', '~>4.0.0'
