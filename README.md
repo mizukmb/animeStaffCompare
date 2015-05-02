@@ -1,4 +1,4 @@
-# animeStaffMatch
+# animeStaffCompare
 ## Description
 This is web app to compare two animation staff team and compute degree of similarity of these staff team members.
 
