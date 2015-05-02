@@ -1,6 +1,6 @@
 # animeStaffMatch
 ## Description
-This is compare two animation staff team and compute degree of similarity to these staff team members.
+This is web app to compare two animation staff team and compute degree of similarity of these staff team members.
 
 ## LISENCE
 MIT
