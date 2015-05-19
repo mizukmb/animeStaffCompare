@@ -1,7 +1,10 @@
 language: ruby
-
+rvm:
+    - 2.2.1
 script:
     - bundle exec rspec test/controllers/anime_controller_test.rb
+
+cache: bundler
 
 # notifications:
 #     emails:
