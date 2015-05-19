@@ -1,0 +1,10 @@
+language: ruby
+
+script:
+    - bundle exec rspec test/controllers/anime_controller_test.rb
+
+# notifications:
+#     emails:
+#         - mizukmb6@gmail.com
+#     on_success: always
+#     on_failure: always
