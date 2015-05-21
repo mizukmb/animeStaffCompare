@@ -6,20 +6,13 @@ describe AnimeController do
     data= hash.scrape(5292) # SHIROBAKO
     expect(data['タイトル']).to eq 'SHIROBAKO'
   end
+
+  it "404ページは abort する" do
+    hash = AnimeController.new
+    begin
+      data = hash.scrape(9999) # 404 Not Found
+    rescue SystemExit=>e
+      expect(e.status).to eq(1)
+    end
+  end
 end
-# class AnimeControllerTest < ActionController::TestCase
-#   test "should get index" do
-#     get :index
-#     assert_response :success
-#   end
-#
-#   test "should get result" do
-#     get :result
-#     assert_response :success
-#   end
-#
-#   test "should get scrape" do
-#     hash = AnimeController.scrape(5292) # SHIROBAKO
-#     expect(hash['タイトル']).to eq 'SHOROBAKO'
-#   end
-# end
